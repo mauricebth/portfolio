@@ -1,2 +1,2 @@
-# portfolio
-Maurice Bothe's Portfolio
+# webportfolio
+Maurice's Webportfolio: Web Developement [HTML CSS]
