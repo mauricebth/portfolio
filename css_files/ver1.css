@@ -208,7 +208,15 @@ p, h1, h2, h3, h4, h5 {
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10vh;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+    #legende_skills {
+        flex-direction: column;
+        align-items: center; /* optional */
+        gap: 10px; /* Abstand zwischen den Boxen */
+    }
 }
 
 .legende_color {
