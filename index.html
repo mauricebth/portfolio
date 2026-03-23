@@ -12,170 +12,44 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-<h1>Maurice Bothe: Portfolio</h1>
-<p>Ein selbsterstelltes, simples Bewerbungsportfolio. HTML & CSS only.</p>
-<p></p>
 
+<header class="main-header">
+    <h1>Dein Name: Portfolio</h1>
+    <p>Kurzbeschreibung / Subtitle</p>
 </header>
-<main class="portfolio-grid">
-    <div class="glass-card">
-        <img src="css_files/img_source/avatar.png"/>
-    <p style="font-weight: bold;">Mein Portfolio</p>
-<p>Die Website dient zur Präsentation meiner bisherigen Fähigkeiten. </p>
-</div>
-        <div class="glass-card mid-width"><h2>Herzlich Willkommen!</h2>
-            <p>Mein Name ist Maurice,  ich komme aus Kassel und ich bin 29 Jahre alt. Mein Traum ist es Webentwickler zu werden. Seit meiner Kindheit beschäftige ich mit Webdesign und -entwicklung.</p>
-    <p>All mein Wissen und Können habe ich mir bisher eigenständig angeeignet. Privatprojekte in Form von Websites oder -anwendungen waren schon immer ein großer Bestandteil meiner Hobbys.</p>
-    <p>Meine Stärken liegen insbesondere bei HTML & CSS. Im Skill-Tree erfährst du mehr über meine Fähigkeiten.</p>
 
+<main class="container">
 
-    </button>
-</div>
+    <!-- HERO SECTION -->
+    <section class="hero-grid">
 
-    
-
-    <div class="glass-card">
-<h2 style="text-align: center;">Spezifizierung bzgl. Kenntnisse</h2>
-<p>Frontend Developement, also HTML & CSS, sowie Webdesign liegen mir bereits sehr gut. Backend Developement Erfahrung habe ich wenig bis kaum. Zudem habe ich bereits insbesondere viel mit WordPress gearbeitet.</p><p>
-    Aktuell arbeite ich außerdem mit folgenden Tools: <b>Visual Studio</b> zum Schreiben meiner Websites, <b>Github</b> zum Hochladen meiner aktuellen Projekte, um diese u.a. zu teilen und <b>Photoshop</b> oder <b>Canva</b> um Designs visuell zu erstellen oder Inspiration zu gewinnen.
-</p>
-
- <hr  style="width: 70%; margin-bottom: 25px; margin-top: 25px; border: none; height: 2px; background: #fff;" />
-        <h2 style="text-align: center;">Persönliche Selbsteinschätzung</h2>
-        <ul class="skill-list">
-  <li>
-    <span class="skill-name">Pünktlichkeit</span>
-    <div class="skill-dots level-5">
-      <span></span><span></span><span></span><span></span><span></span>
-      <span></span>
-    </div>
-  </li>
-
-  <li>
-    <span class="skill-name">Flexibilität</span>
-    <div class="skill-dots level-6">
-      <span></span><span></span><span></span><span></span><span></span>
-      <span></span>
-    </div>
-  </li>
-
-    <li>
-    <span class="skill-name">Lernfähigkeit</span>
-    <div class="skill-dots level-4">
-      <span></span><span></span><span></span><span></span><span></span>
-      <span></span>
-    </div>
-  </li>
-
-      <li>
-    <span class="skill-name">Belastbarkeit</span>
-    <div class="skill-dots level-6">
-      <span></span><span></span><span></span><span></span><span></span>
-      <span></span>
-    </div>
-  </li>
-<li>
- <span class="skill-name">Kreativität</span>
-    <div class="skill-dots level-5">
-      <span></span><span></span><span></span><span></span><span></span>
-      <span></span>
-    </div>
-  </li>
-
-</ul>
-
-
- <h2 style="text-align: center; margin-top: 50px;">Referenzen</h2>
- <p style="text-align:center;"><a href="https://mauricebth.github.io/ffxiv-gilde" target="_blank">#1 "FFXIV"-Community Website</a></p>
-
-       </div>
-    <div class="glass-card mid-width">
-        <h2 style="text-align: center;">Skill-Tree</h2>
-        <p style="text-align: center; padding-bottom: 35px;">Hover zum Anzeigen der Skills</p>
-        <div id="legende_skills">
-<div class="legende_color" style="--legend-color:#254722a4;">Minimale Kenntnisse</div>
-<div class="legende_color" style="--legend-color:#1e28b980;">Fortgeschrittene Kenntnisse</div>
-<div class="legende_color" style="--legend-color:#a71c629f;">Erweiterte Kenntnisse</div>
-
+        <!-- CARD 1: AVATAR -->
+        <div class="card avatar-card">
+            <img src="img/avatar.png" alt="Avatar">
+            <h2>Dein Name</h2>
         </div>
 
-  <div class="skilltree">
+        <!-- CARD 2: ABOUT -->
+        <div class="card about-card">
+            <h2>Über mich</h2>
+            <p>
+                <!-- Kurzbeschreibung -->
+            </p>
+        </div>
 
-<div class="skill">
+        <!-- CARD 3: TAGS -->
+        <div class="card tags-card">
+            <h2>Skills / Tags</h2>
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>WordPress</span>
+                <span>Frontend</span>
+            </div>
+        </div>
 
-    <div class="skill-node">CMS</div>
+    </section>
 
-    <div class="subskills">
-        <div class="subskill topsk" style="--subskill-color:#a71c61;">WordPress</div>
-        <div class="subskill leftsk" style="--subskill-color:#a71c61;">IV CMS</div>
-    </div>
-
-</div>
-
-
-
-<div class="skill">
-
-    <div class="skill-node">Web Dev</div>
-
-    <div class="subskills">
-        <div class="subskill topsk"  style="--subskill-color:#254722;">MySQL</div>
-        <div class="subskill rightsk"  style="--subskill-color:#254722;">PHP</div>
-        <div class="subskill leftsk" style="--subskill-color:#a71c61;">HTML</div>
-        <div class="subskill botsk" style="--subskill-color:#a71c61;">CSS</div>
-    </div>
-
-</div>
-
-
-<div class="skill">
-
-    <div class="skill-node">Tools</div>
-
-    <div class="subskills">
-        <div class="subskill topsk" style="--subskill-color:#1e28b9;">Photo shop</div>
-        <div class="subskill leftsk" style="--subskill-color:#1e28b9;">Visual Studio</div>
-        <div class="subskill rightsk" style="--subskill-color:#254722;">Github</div>
-        <div class="subskill botsk" style="--subskill-color:#a71c61;">Canva</div>
-    </div>
-
-</div>
-
-
-</div>
-
-<h2 style="text-align: center;">About Me</h2>
-
-<span class="skill-name">Kurzfassung über mich</span>
-<p>Ich bin jemand, der zielorientiert vorangeht. Teamarbeit ist für mich kein Problem, bevorzuge aber eher eigenständiges Arbeiten. Mit Veränderungen kann ich gut umgehen und bin gut darin, schnell neue Lösungswege zu finden.</p>
-<p>Wenn mich etwas besonders begeistert, hänge ich mich richtig rein und kann leider oft nicht mehr "aufhören". Fehlerbehebungen geben mir deshalb oft keine Ruhe.
-    Meine Arbeitsweise ist manchmal etwas chaotisch, aber das Ergebnis dafür sauber und optimal. Kritik, die mir weiterhilft, finde ich super!</p>
-
-<p>Bereits im Teenager-Alter habe ich mit kleinen Webprojekten und Webdesigns begonnen. Erste Designversuche und Websites habe ich bereits mit etwa 14 Jahren ausprobiert. Viele Projekte waren Fan- oder Community Websites für Online-Games.</p>
-
-<span class="skill-name">Worin bin ich besonders gut?</span>
-<p>Durch einfaches Ausprobieren konnte ich die Kombination aus HTML und CSS verstehen und selber anwenden. Einfache Landing Pages, als Beispiel, sind für mich also keine große Herausforderung mehr.</p>
-
-
-<span class="skill-name">Wo liegen meine Schwierigkeiten?</span>
-<p>Zu modernen Websites gehört natürlich auch JavaScript, was ebenso einer meiner Schwächen ist. Eine Verbesserung meiner Fähigkeiten in diesem Bereich liegt aktuell im Fokus.</p>
-<p>Ein weiterer Aspekt ist die fehlerfreie Umsetzung von "Responsive Designs".</p>
-
-
-<span class="skill-name">Meine Ziele für die Zukunft</span>
-<p>Aktuell verfolge ich das Ziel die Weiterbildung als Webentwickler zu absolvieren, um dann im Webentwicklungsbereich beruflich tätig zu werden. Langfristig gesehen möchte ich meine
-    Kenntnisse stetig erweitern und verbessern. Als endgültiges Ziel habe ich den Traum vollständiger Webentwickler sowohl für Frontend, als auch für Backend zu werden.
-</p>
-
-<p>Ich habe klar definierte Ziele und gebe immer mein Bestes, diese so gut wie es geht, zu erreichen.</p>
-
-
-
-
-</div>
-
-    <div class="glass-card full-width">&copy; 2026 Maurice Bothe | maur.bothe@gmail.com</div>
 </main>
 
 </body>
