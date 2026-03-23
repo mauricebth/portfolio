@@ -1,364 +1,111 @@
-html {
-background-color: #141468;
-opacity: 1;
-background-image: radial-gradient(circle at center center, #2e338a, #141468), repeating-radial-gradient(circle at center center, #2e338a, #2e338a, 140px, transparent 180px, transparent 140px);
-background-blend-mode: multiply;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
     min-height: 100vh;
+    color: #fff;
+
+    background-color: #141468;
+    background-image: radial-gradient(circle at center center, #2e338a, #141468),
+                      repeating-radial-gradient(circle at center center, #2e338a, #2e338a 140px, transparent 180px);
+    background-blend-mode: multiply;
 }
 
-a {
-    color: #0099ff;
+/* HEADER */
+.main-header {
+    text-align: center;
+    padding: 2rem 1rem;
+
+    background: radial-gradient(
+        circle at center,
+        rgba(0,170,255,0.4) 0%,
+        rgba(0,170,255,0.2) 40%,
+        rgba(0,170,255,0.05) 70%,
+        rgba(0,170,255,0) 100%
+    );
 }
 
-header {
-    width: 100%;
-    height: auto;
+.main-header h1 {
     font-family: 'Outfit', sans-serif;
-    font-size: 2rem;
-    overflow:hidden;
-    top: 0;
-  background: radial-gradient(
-    circle at center,
-    rgba(0,170,255,0.4) 0%,
-    rgba(0,170,255,0.2) 40%,
-    rgba(0,170,255,0.05) 70%,
-    rgba(0,170,255,0) 100%
-  );
+    font-size: 2.5rem;
+}
+
+.main-header p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 2rem;
-
-    border-radius: 46px;
 }
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    header p {
-        font-size: 0.9rem;
-    }
-
-    .portfolio-grid {
-        margin-top: 8rem;
-        padding: 1rem;
-    }
-
-    .glass-card img {
-        width: 100%;
-        height: auto;
-        max-width: 200px;
-    }
-
-    .skill {
-        width: 90px;
-        height: 90px;
-    }
-
-    .skill-node {
-        width: 90px;
-        height: 90px;
-    }
-
-    
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .mid-width,
-    .full-width {
-        grid-column: 1 / -1;
-    }
-
-}
-
-header p { color: #fff; font-size: 1rem; text-align: center;}
-
-header h1 { color: #ffffff; text-align: left; font-size: 2.5rem; text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.25); text-align: center; }
-
-header hr {
-    border: none;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 80%;
-
-}
-
-.portfolio-grid {
+/* GRID */
+.hero-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 2rem;
+}
 
-    width: 100%;
-    max-width: 1200px;
-    margin: 12rem auto 0 auto;
-
-    background: rgba(3, 3, 3, 0.20);
+/* CARD */
+.card {
+    background: rgba(0,0,0,0.2);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10.5px);
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.2);
 }
 
-.full-width {
-    grid-column: 1 / -1;
-}
-
-.mid-width {
-    grid-column: span 2;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Outfit', sans-serif;
-    color: #fcfcfc;
-}
-
-
-
-.glass-card {
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    padding: 1.8rem;
+/* AVATAR */
+.avatar-card {
     text-align: center;
-    min-height: 20px;
-    color: #fff;
-    background: rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: 0.3s;
 }
 
-.glass-card img {
-  width: 260px;
-  height: 260px;
-  transition: 0.3s;
-  margin: 12px;
-}
-
-.glass-card img:hover {
-  opacity: 1;
-  transform: scale(1.2);
-}
-
-.glass-card:has(.skill:hover) {
-    min-height: 200px;
-}
-
-.glass-card p,
-.glass-card h1,
-.glass-card h2,
-.glass-card h3 {
-    text-align: left;
-}
-
-.glass-card h1 {
-    text-align: left;
-}
-
-.glass-img {
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(10.5px);
-    -webkit-backdrop-filter: blur(12.5px);
-}
-
-
-.btn-discover {
-  outline: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #141f80;
-  min-width: 60px;
-  min-height: 10px;
-  max-height: 80px;
-  border: 0;
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
-  box-sizing: border-box;
-  padding: 5px 10px;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  overflow: hidden;
-  cursor: pointer;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 1px rgba(0,0,0,0.41);
-}
-
-.btn-discover:hover {
-  opacity: .95;
-}
-
-.btn-discover .animation {
-  border-radius: 100%;
-  animation:linear ripple 0.7s infinite ;
-}
-
-@keyframes ripple {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
-  }
-
-  100% {
-    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
-  }
-}
-
-.skilltree {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 60px;
-    justify-items: center;
-    margin-top: 40px;
-}
-
-.skill{
-    position: relative;
-    width: 120px;
-    height: 120px;
-    margin-bottom: 6vh;
-}
-
-.skill-node{
-    width: 120px;
-    height: 120px;
+.avatar-card img {
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
-    background: black;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border:2px solid #00aaff;
-    box-shadow:0 0 20px #00aaff;
+    margin-bottom: 1rem;
 }
 
-.subskills{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-}
-
-.subskill{
-    position:absolute;
-
-    width:70px;
-    height:70px;
-    border-radius:50%;
-
-    background:black;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border:2px solid var(--subskill-color);
-    box-shadow:0 0 10px var(--subskill-color);
-
-    opacity:0;
-    transform:scale(0.5);
-    transition:0.5s;
-}
-
-.botsk{
-    top: 90px;
-    left: 25px;
-}
-
-.leftsk{
-    top: 25px;
-    left: -45px;
-}
-
-.rightsk{
-    top: 25px;
-    right: -45px;
-}
-
-.topsk{
-    top: -40px;
-    left:25px;
-}
-
-.skill:hover .subskill{
-    opacity:1;
-    transform:scale(1);
-}
-
-#legende_skills {
+/* TAGS */
+.tags {
     display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10vh;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.legende_color {
-    background: var(--legend-color);
-    padding: 1rem;
-    border-radius: 12px;
-    margin: 8px;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
-    font-size: 1em;
-    border: 2px solid rgba(255, 255, 255, 0.21);
-    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.178);
-    font-weight: lighter;
+.tags span {
+    background: rgba(0,170,255,0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
 }
 
-.skill-list {
-  list-style: none;
-  padding: 0;
+/* 📱 RESPONSIVE */
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .avatar-card {
+        grid-column: 1 / -1;
+    }
 }
 
-.skill-list li {
-  margin-bottom: 15px;
-}
+@media (max-width: 600px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
 
-.skill-name {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  letter-spacing: 2.4px;
-  background: radial-gradient(
-    circle at center,
-    rgba(0,170,255,0.4) 0%,
-    rgba(0,170,255,0.2) 40%,
-    rgba(0,170,255,0.05) 70%,
-    rgba(0,170,255,0) 100%
-  );
-  padding: 5px;
-  margin: 2rem;
-}
-
-.skill-dots {
-  display: flex;
-  gap: 6px;
-  justify-content: center;
-}
-
-.skill-dots span {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #333;
-  border: 1px solid #666;
-}
-
-.level-1 span:nth-child(-n+1),
-.level-2 span:nth-child(-n+2),
-.level-3 span:nth-child(-n+3),
-.level-4 span:nth-child(-n+4),
-.level-5 span:nth-child(-n+5),
-.level-6 span:nth-child(-n+6) {
-  background: #00aaff;
-  border-color: #00aaff;
+    .main-header h1 {
+        font-size: 1.8rem;
+    }
 }
