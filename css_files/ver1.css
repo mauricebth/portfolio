@@ -11,6 +11,10 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: #0099ff;
+}
+
 header {
     width: 100%;
     height: auto;
