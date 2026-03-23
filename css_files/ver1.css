@@ -10,11 +10,10 @@ body {
     min-height: 100vh;
     color: #fff;
 
-    background-color: #141468;
-    background-image: radial-gradient(circle at center center, #2e338a, #141468),
-                      repeating-radial-gradient(circle at center center, #2e338a, #2e338a 140px, transparent 180px);
-    background-blend-mode: multiply;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
+
+
 
 p, h1, h2, h3, h4, h5 {
     padding: 0.3rem;
