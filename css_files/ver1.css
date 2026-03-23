@@ -16,6 +16,10 @@ body {
     background-blend-mode: multiply;
 }
 
+p {
+    padding: 1rem;
+}
+
 /* HEADER */
 .main-header {
     text-align: center;
