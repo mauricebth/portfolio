@@ -13,10 +13,6 @@ body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
-p, h1, h2, h3, h4, h5 {
-    padding: 0.3rem;
-}
-
 /* HEADER */
 .main-header {
     text-align: center;
@@ -60,7 +56,7 @@ p, h1, h2, h3, h4, h5 {
 .card {
     background: rgba(0,0,0,0.2);
     border-radius: 16px;
-    padding: 1.5rem;
+    padding: 35px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0,0,0,0.2);
 }
@@ -86,7 +82,7 @@ p, h1, h2, h3, h4, h5 {
 
 .tags span {
     background: rgba(0,170,255,0.2);
-    padding: 6px 12px;
+    padding: 8px 15px;
     border-radius: 20px;
     font-size: 0.8rem;
 }
