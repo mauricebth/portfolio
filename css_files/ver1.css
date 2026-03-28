@@ -67,6 +67,10 @@ body {
     box-shadow: 0 4px 30px rgba(0,0,0,0.2);
 }
 
+.card:hover {
+    border: 2px solid linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+}
+
 /* AVATAR */
 .avatar-card {
     text-align: center;
