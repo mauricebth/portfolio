@@ -60,15 +60,29 @@ body {
 
 /* CARD */
 .card {
-    background: rgba(0,0,0,0.2);
-    border-radius: 16px;
-    padding: 2rem;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+  position: relative; 
+  background: rgba(0,0,0,0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-.card:hover {
-    border: 2px solid linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -2px; 
+  border-radius: 18px; 
+  background: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  filter: blur(8px);
+}
+
+.card:hover::before {
+  opacity: 1;
 }
 
 /* AVATAR */
