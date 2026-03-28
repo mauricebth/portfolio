@@ -69,42 +69,6 @@ body {
   z-index: 1;
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 16px;
-  padding: 2px; 
-
-  background: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-  
-  -webkit-mask: 
-    linear-gradient(#000 0 0) content-box, 
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.card::after {
-  content: "";
-  position: absolute;
-  inset: -4px;
-  border-radius: 20px;
-  background: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-  filter: blur(10px);
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 0.3s ease;
-}
-
-.card:hover::before,
-.card:hover::after {
-  opacity: 1;
-}
-
 /* AVATAR */
 .avatar-card {
     text-align: center;
