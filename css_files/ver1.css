@@ -74,7 +74,7 @@ body {
   position: absolute;
   inset: 0;
   border-radius: 16px;
-  padding: 2px;
+  padding: 2px; 
 
   background: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
   
