@@ -75,7 +75,7 @@ body {
 .avatar-card img {
     width: 2250px;
     height: 400px;
-    border-radius: 50%;
+    border-radius: 24px;
     margin-bottom: 1rem;
 }
 
